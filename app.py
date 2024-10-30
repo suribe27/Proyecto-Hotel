@@ -1,6 +1,7 @@
-
-from ui_consola import UIConsola
+import tkinter as tk
+from interface import App
 
 if __name__ == "__main__":
-    consola = UIConsola()
-    consola.ejecutar_app()
+    root = tk.Tk()
+    app = App(root)
+    root.mainloop()
